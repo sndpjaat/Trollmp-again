@@ -1,0 +1,6 @@
+<svg width="208" height="75" viewBox="0 0 208 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M208 37C208 41.4183 204.418 45 200 45C195.582 45 192 41.4183 192 37C192 32.5817 195.582 29 200 29C204.418 29 208 32.5817 208 37ZM0 37L15 28.3397V45.6603L0 37ZM200 38.5H13.5V35.5H200V38.5Z" fill="white"/>
+<circle cx="100.5" cy="37.5" r="36" fill="#DF4741" stroke="white" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="100.5" cy="37.5" r="27.5" fill="#DF4741"/>
+<circle cx="101" cy="38" r="12" fill="white"/>
+</svg>

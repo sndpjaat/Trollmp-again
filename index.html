@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TrollMp</title>
+    <link rel="shortcut icon" href="./assets/image/SVG/fave_icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_bg min-vh-100 w-100 d-flex flex-column position-relative drkred " id="Home">
+        <nav class="nav pt-20 position-relative z-2 js-z">
+            <div class=" container max-w-1140 w-100">
+                <div
+                    class="navbar d-flex justify-content-between align-items-center  px-55 navbar-bg px-sm-6 py-sm-five">
+                    <div class="logo">
+                        <img src="./assets/image/SVG/navlogo.svg" alt="logo svg" class="main-logo cp">
+                    </div>
+                    <input type="checkbox" id="checkbox" hidden>
+                    <label for="checkbox" class="toggle d-flex flex-column d-lg-none z-31">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+
+                    <ul class="navbar-items d-flex align-items-center gap-24 m-0 ps-0">
+
+                        <li class="navlist"> <a href="#Home" class=" ff_Balsamiq fw-400 fs-sm lh-24 nav_link">Home</a>
+                        </li>
+                        <li class="navlist"><a href="#Tokenomics"
+                                class=" ff_Balsamiq fw-400 fs-sm lh-24 nav_link">Tokenomics</a>
+                        </li>
+                        <li class="navlist"><a href="#Roadmap"
+                                class=" ff_Balsamiq fw-400 fs-sm lh-24 nav_link">Roadmap</a>
+                        </li>
+                        <li class="navlist"><a href="#Ecosystem"
+                                class=" ff_Balsamiq fw-400 fs-sm lh-24 nav_link">Ecosystem</a>
+                        </li>
+                        <li class="navlist"><a href="#Conclusion"
+                                class=" ff_Balsamiq fw-400 fs-sm lh-24 nav_link">Conclusion</a>
+                        </li>
+                        <li class="d-flex d-lg-none ">
+                            <button
+                                class="commen-btn btn-bg position-relative ff-railway fw-700 fs-md lh-150 white-color justify-content-center align-items-center">Launch
+                                App</button>
+                        </li>
+                    </ul>
+
+                    <button
+                        class="commen-btn btn-bg position-relative ff_Balsamiq fw-700 fs-sm lh-19 drk-black d-none d-lg-flex justify-content-center align-items-center">Contact
+                        Us</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container max-w-1140  pt-128 pb-196 flex-grow-1 d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                    <div>
+                        <h2 class="max-w-599 ff_Gothic fw-400 fs-4xl lh-60 text-p-white mb-0 pb-16">Unlock the Magic of
+                            TROLLMP</h2>
+                        <p class="max-w-558 ff_Balsamiq fw-400 fs-sm lh-24 mb-0 text-p-white op-70 pb-34">We're introducing
+                            TROLLMP, the most fantastic token ever created! Just like nobody builds walls better than
+                            me, no body launches tokens like we do.</p>
+                        <button
+                            class="commen-btn btn-bg position-relative ff_Balsamiq fw-700 fs-sm lh-19 drk-black d-none d-lg-flex justify-content-center align-items-center">Get
+                            Started</button>
+                        <div class="pt-70 d-flex gap-3">
+                            <div class="mini-box d-flex align-items-center justify-content-center">
+                                <a href="https://x.com/?lang=en" target="_blank" class="hover-element"><svg width="19"
+                                        height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.5332 0.767578H17.2272L11.3413 8.21082L18.266 18.3374H12.8443L8.59824 12.1949L3.73873 18.3374H1.04323L7.33907 10.3758L0.696228 0.768388H6.2556L10.0939 6.38282L14.5332 0.767578ZM13.5881 16.5539H15.0808L5.44446 2.4579H3.84268L13.5881 16.5539Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+
+                            </div>
+                            <div class="mini-box d-flex align-items-center justify-content-center">
+                                <a href="https://discord.com/" target="_blank" class="hover-element"><svg width="26"
+                                        height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.5098 1.86903C19.9265 1.13094 18.2122 0.595223 16.4265 0.285699C16.4108 0.285199 16.3952 0.288137 16.3808 0.294307C16.3664 0.300478 16.3536 0.309731 16.3431 0.321414C16.1288 0.714271 15.8788 1.22618 15.7122 1.61903C13.8181 1.33332 11.8919 1.33332 9.99788 1.61903C9.83121 1.21427 9.58121 0.714271 9.35502 0.321414C9.34312 0.297604 9.3074 0.285699 9.27169 0.285699C7.48597 0.595223 5.78359 1.13094 4.18836 1.86903C4.17645 1.86903 4.16455 1.88094 4.15264 1.89284C0.914547 6.73808 0.0216893 11.4524 0.462166 16.119C0.462166 16.1428 0.47407 16.1667 0.49788 16.1786C2.64074 17.75 4.70026 18.7024 6.73598 19.3333C6.77169 19.3452 6.8074 19.3333 6.81931 19.3095C7.2955 18.6547 7.72407 17.9643 8.09312 17.2381C8.11693 17.1905 8.09312 17.1428 8.0455 17.1309C7.36693 16.869 6.72407 16.5595 6.09312 16.2024C6.0455 16.1786 6.0455 16.1071 6.08121 16.0714C6.21217 15.9762 6.34312 15.869 6.47407 15.7738C6.49788 15.75 6.53359 15.75 6.5574 15.7619C10.6526 17.6309 15.0693 17.6309 19.1169 15.7619C19.1407 15.75 19.1765 15.75 19.2003 15.7738C19.3312 15.8809 19.4622 15.9762 19.5931 16.0833C19.6407 16.119 19.6407 16.1905 19.5812 16.2143C18.9622 16.5833 18.3074 16.8809 17.6288 17.1428C17.5812 17.1547 17.5693 17.2143 17.5812 17.25C17.9622 17.9762 18.3907 18.6667 18.855 19.3214C18.8907 19.3333 18.9265 19.3452 18.9622 19.3333C21.0098 18.7024 23.0693 17.75 25.2122 16.1786C25.236 16.1667 25.2479 16.1428 25.2479 16.119C25.7717 10.7262 24.3788 6.0476 21.5574 1.89284C21.5455 1.88094 21.5336 1.86903 21.5098 1.86903ZM8.71217 13.2738C7.48598 13.2738 6.46217 12.1428 6.46217 10.75C6.46217 9.35713 7.46217 8.22618 8.71217 8.22618C9.97407 8.22618 10.9741 9.36903 10.9622 10.75C10.9622 12.1428 9.96217 13.2738 8.71217 13.2738ZM17.0098 13.2738C15.7836 13.2738 14.7598 12.1428 14.7598 10.75C14.7598 9.35713 15.7598 8.22618 17.0098 8.22618C18.2717 8.22618 19.2717 9.36903 19.2598 10.75C19.2598 12.1428 18.2717 13.2738 17.0098 13.2738Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <div class="mini-box d-flex align-items-center justify-content-center">
+                                <a href="https://telegram.org/" target="_blank" class="hover-element"><svg width="25"
+                                        height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.5025 19.5581V19.5557L20.5239 19.5045L24.094 1.50545V1.44831C24.094 0.999521 23.9273 0.607874 23.5678 0.373362C23.2523 0.16742 22.8893 0.153135 22.6345 0.172182C22.3974 0.193628 22.1634 0.241543 21.9369 0.315032C21.8404 0.346167 21.7451 0.381113 21.6512 0.419788L21.6358 0.42574L1.732 8.23368L1.72604 8.23606C1.66553 8.25673 1.6063 8.28098 1.54867 8.30868C1.40712 8.37228 1.2713 8.44795 1.14274 8.53486C0.8868 8.71104 0.39992 9.12531 0.482058 9.78242C0.549912 10.3276 0.924893 10.6728 1.17845 10.8526C1.32812 10.9575 1.48903 11.0453 1.65819 11.1145L1.69628 11.1312L1.70819 11.1347L1.71652 11.1383L5.19968 12.3109C5.18778 12.5287 5.2092 12.7513 5.26753 12.9715L7.01149 19.5891C7.10677 19.9498 7.31263 20.2716 7.60018 20.5093C7.88773 20.747 8.24252 20.8887 8.61472 20.9145C8.98692 20.9402 9.35783 20.8487 9.67537 20.6528C9.9929 20.457 10.2411 20.1666 10.3851 19.8224L13.1088 16.9106L17.786 20.4962L17.8526 20.5247C18.2776 20.7104 18.674 20.7688 19.0371 20.72C19.4002 20.67 19.6882 20.5176 19.9049 20.345C20.1555 20.1418 20.3552 19.883 20.4882 19.5891L20.4977 19.5688L20.5013 19.5617L20.5025 19.5581ZM6.99364 12.5168C6.97433 12.4434 6.97892 12.3657 7.00674 12.2951C7.03457 12.2244 7.08419 12.1645 7.14839 12.124L18.9585 4.62434C18.9585 4.62434 19.6537 4.20174 19.6287 4.62434C19.6287 4.62434 19.7525 4.69815 19.3799 5.04456C19.0276 5.3743 10.9625 13.1608 10.1459 13.9489C10.1005 13.993 10.0686 14.0491 10.0542 14.1108L8.7376 19.1343L6.99364 12.5168Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center pt-4 pt-lg-0">
+                    <img src="./assets/image/SVG/img_scnd.svg" alt="img_scnd.png" class="w-100 max-w-585">
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-------------------------------------------------------- section_2 ------------------------------------------------------->
+    <section class="pt-133 pb-83">
+        <div class="container max-w-1440">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center ">
+                    <img class="max-w-450 w-100" src="./assets/image/SVG/suit_man.svg" alt="suit_man.svg">
+                </div>
+
+                <div
+                    class="col-12 col-lg-6 d-flex justify-content-sm-start justify-content-center align-items-center flex-column">
+                 <div class=" d-flex flex-column">
+                    <h2 class="max-w-218 ff_Gothic fw-400 fs-3xl lh-48 mb-0 text-center justify-content-sm-start text-sm-start drk-black pb-16">About Us</h2>
+                    <div class="text_hole d-flex flex-column mb-30">
+                        <div class="d-flex justify-content-start align-items-start gap-3">
+                            <img src="./assets/image/SVG/black_tickbar.svg" alt="black_tickbar.svg">
+                            <p
+                                class="op-70 max-w-558 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0 text-center text-sm-start">
+                                Ladies and gentlemen, meme enthusiasts, and fellow citizens of the internet, welcome to
+                                the TROLLMP revolution! It's an honor to address you today, and let me tell you, there's
+                                never been a more exciting time to be alive. We're living in the age of memes, where
+                                laughter knows no bounds and creativity reigns supreme.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-start gap-3">
+                            <img src="./assets/image/SVG/black_tickbar.svg" alt="black_tickbar.svg">
+                            <p
+                                class="op-70 max-w-558 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0 text-center text-sm-start pb-16">
+                                Now, when it comes to memes, nobody does it better than the United States. We've got the
+                                best memes, folks, tremendous memes. From viral videos to hilarious photoshops, we've
+                                seen it all. But you know what's been missing? A meme coin that truly captures the
+                                spirit of the moment. That's where TROLLMP comes in.</p>
+
+                        </div>
+                        <div class="d-flex justify-content-start align-items-start gap-3">
+                            <img src="./assets/image/SVG/black_tickbar.svg" alt="black_tickbar.svg">
+                            <p
+                                class="op-70 max-w-558 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0 text-center text-sm-start">
+                                Ladies and gentlemen, meme enthusiasts, and fellow citizens of the internet, welcome to
+                                the TROLLMP revolution! It's an honor to address you today, and let me tell you, there's
+                                never been a more exciting time to be alive. We're living in the age of memes, where
+                                laughter knows no bounds and creativity reigns supreme.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-start gap-3">
+                            <img src="./assets/image/SVG/black_tickbar.svg" alt="black_tickbar.svg">
+                            <p
+                                class="op-70 max-w-558 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0 text-center text-sm-start pb-16">
+                                Now, when it comes to memes, nobody does it better than the United States. We've got the
+                                best memes, folks, tremendous memes. From viral videos to hilarious photoshops, we've
+                                seen it all. But you know what's been missing? A meme coin that truly captures the
+                                spirit of the moment. That's where TROLLMP comes in.</p>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="red_line_itm">
+                        <p class="op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0 pt-2">Scorll to Read More</p>
+
+                    </div>
+                 </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------------------------------------------ section_3 ------------------------------------------------------->
+
+    <section class="token_Bg pt-184 pb-225" id="Tokenomics" >
+        <div class="container max-w-1440px mx-auto">
+            <div class="row">
+                <div class="col-12 col-lg-6 pb-5 pb-lg-0 pt-lg-0 pt-5">
+                    <img class="w-100" src="./assets/image/SVG/sction_thrd_pic.svg" alt="sction_thrd_pic.svg">
+                </div>
+                <div
+                    class="col-12 col-lg-6 d-flex flex-column justify-content-end justify-content-center align-items-center">
+                    <div class="drk_box ">
+
+                        <div>
+                            <h2 class="max-w-289 ff_Gothic fw-400 fs-3xl lh-48 mb-0 text-p-white pb-16">Tokenomics</h2>
+                            <div class="d-flex gap-43">
+                                <h2 class="max-w-95 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 ">Token Name:</h2>
+                                <p class="max-w-84 ff_Balsamiq fw-700 fs-md lh-27 text-p-white mb-0 ">TROLLMP</p>
+
+                            </div>
+
+                            <div class="d-flex gap-35">
+                                <h2 class="max-w-103 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 ">Token Symbol:
+                                </h2>
+                                <p class="max-w-50 ff_Balsamiq fw-700 fs-md lh-27 text-p-white mb-0 ">TRMP</p>
+
+                            </div>
+
+                            <div class="d-flex gap-48">
+                                <h2 class="max-w-90 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 text-nowrap">Total
+                                    Supply:
+                                </h2>
+                                <p class="max-w-337 ff_Balsamiq fw-400 fs-md lh-27 text-p-white mb-0 ">Infinite jest
+                                    supply, but let's keep it real – <span class="fw-700">142.53 Billion</span> </p>
+
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <h2 class="max-w-134 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 ">TRMP Token Type:
+                                </h2>
+                                <p class="max-w-60 ff_Balsamiq fw-700 fs-md lh-27 text-p-white mb-0 text-nowrap ">ERC-20
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------- section_4 ----------------------------------------------------------->
+    <section class="position-relative">
+        <div class="position-absolute z-0 sction_for_trmp d-none d-lg-block op-60 opacity-xl-1" data-aos="fade-right">
+            <img src="./assets/image/SVG/sction_for_trmp.svg" alt="sction_for_trmp.svg" class="w-100">
+
+        </div>
+        <div class="position-absolute z-0 sction_for_trmp_4 d-none d-lg-block op-60 opacity-xl-1" data-aos="fade-left">
+            <img src="./assets/image/SVG/trmp_elpse.svg" alt="sction_for_trmp.svg" class="w-100">
+
+        </div>
+        <div class="container max-w-1440">
+
+            <div class="text_area mx-auto pt-133 pb-143 position-relative" data-aos="fade-up"
+            data-aos-duration="3000">
+
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="max-w-235 fw-400 fs-3xl lh-48 mb-0 drk-black pb-16 ff_Gothic text-center">UTILITY</h2>
+                    <p class="max-w-728 op-70 ff_Balsamiq fw-400 fs-sm  lh-24 mb-0 drk-black text-center ">Now, you might
+                        be wondering, what can I do with TROLLMP? Well, let me tell you, the possibilities are endless!
+                        You can use TROLLMP to vote on your favorite memes, tip your favorite creators, or even trade
+                        them on the open market. It's freedom, folks, freedom like you've never seen before!</p>
+
+                    <div class="wrapper mt-40 pt-70  ">
+                        <div class="sessions">
+                            <div class="time_content1">
+                                <div class="time max-w-203 ff_Balsamiq fw-700 fs-md lh-21 drk-black pt_5  mb-0">Voting
+                                    Rights</div>
+                                <p class="pt-8 max-w-655 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black  mb-0">Holders
+                                    of TROLLMP will have the opportunity to participate in governance proposals,
+                                    enabdivng them to vote on key decisions related to the development and direction of
+                                    the TROLLMP ecosystem.</p>
+                            </div>
+                            <div class="time_content2 pt_43">
+                                <div class="time max-w-203 ff_Balsamiq fw-700 fs-md lh-21 drk-black pt_5  mb-0">Meme
+                                    Creation Rewards</div>
+                                <p class="pt-8 max-w-655 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black  mb-0">TROLLMP
+                                    holders will be edivgible to receive rewards for creating and sharing high-quadivty
+                                    memes within the TROLLMP community, encouraging active participation and engagement.
+                                </p>
+                            </div>
+                            <div class="time_content3 pt-20 pb_43">
+                                <div class="time max-w-203 ff_Balsamiq fw-700 fs-md lh-21 drk-black pt_5 text-nowrap  mb-0">Access
+                                    to Platform Features</div>
+                                <p class="pt-8 max-w-655 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black  mb-0">TROLLMP
+                                    will unlock exclusive features and privileges within the TROLLMP platform, such as
+                                    access to premium content, special events, and enhanced voting capabidivties.</p>
+                            </div>
+                            <div class=" time_content4">
+                                <div class="time max-w-148 ff_Balsamiq fw-700 fs-md lh-21 drk-black pt_5  mb-0">
+                                    Liquidity Provision</div>
+                                <p class="pt-8 max-w-655 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black  mb-0">TROLLMP
+                                    holders can contribute to divquidity pools on decentradivzed exchanges,
+                                    facidivtating trading and divquidity provision for the TROLLMP token.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!---------------------------------------------------------------------- section_5 ------------------------------------------------------->
+    <section class="roadmap_BG">
+        <div class=" container max-w-1140 pb-195" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="d-flex flex-column justify-content-center align-items-center pt-173">
+                <h2 class="max-w-225 ff_Gothic fw-400 fs-3xl lh-48 text-p-white mb-0 text-center pb-70">Roadmap</h2>
+            </div>
+            <div class="timeline">
+                <ul>
+                  <li>
+                    <div class="content">
+                        <div class="phase_content pb-4 d-lg-none">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+                        </div>
+                        <div class="text_grop d-flex align-items-center justify-content-center">
+                            <div class="text_outfit">
+                                <h2 class="max-w-316 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0 ">Launchpad Ignition</h2>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex gap-3 pt-3 pb-1">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class=" ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0 text-nowrap max-w-288">Create TROLLMP on Ethereum.</h2>
+                                    </div>
+            
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-230 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Build a strong community.</h2>
+            
+                                    </div> 
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-257 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Conduct a Spacedrop event.</h2>
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="phase_content">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+            
+            
+                        </div>
+                    </div>
+                  </li>
+                  
+                  <li  class="pt_80">
+                    <div class="content">
+                        <div class="phase_content pb-4 d-lg-none">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+                        </div>
+                        <div class="text_grop d-flex align-items-center justify-content-center">
+                            <div class="text_outfit">
+                                <h2 class="max-w-316 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0 ">Lunar Liftoff</h2>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex gap-3 pt-3 pb-1">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class=" ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">List on exchanges.</h2>
+                                    </div>
+            
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-212 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Establish liquidity pools.</h2>
+            
+                                    </div> 
+                                    <div class="d-flex gap-3 pt-3">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-288 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Launch a marketing campaign.</h2>
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="phase_content">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+            
+            
+                        </div>
+                    </div>
+                  </li>
+                  
+                  <li  class="pt_80">
+                    <div class="content">
+                        <div class="phase_content pb-4 d-lg-none">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+                        </div>
+                        <div class="text_grop d-flex align-items-center justify-content-center">
+                            <div class="text_outfit">
+                                <h2 class="max-w-316 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0 ">Galactic Expansion</h2>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex gap-3 pt-3 pb-1">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-170 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0 ">Form partnerships.</h2>
+                                    </div>
+            
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-186 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Grow the community.</h2>
+            
+                                    </div> 
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-244 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Enhance platform features.</h2>
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="phase_content">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+            
+            
+                        </div>
+                    </div>
+                  </li>
+                  
+                  <li  class="pt_80">
+                    <div class="content">
+                        <div class="phase_content pb-4 d-lg-none">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+                        </div>
+                        <div class="text_grop d-flex align-items-center justify-content-center">
+                            <div class="text_outfit">
+                                <h2 class="max-w-316 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0 ">Cosmic Domination</h2>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex gap-3 pt-3 pb-1">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-268 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Explore cross-chainmigration.</h2>
+                                    </div>
+            
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-230 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0 text-nowrap">Focus on global adoption.</h2>
+            
+                                    </div> 
+                                    <div class="d-flex gap-3 pt-3">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-288 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Establish a decentralized governance structure.</h2>
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="phase_content">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 1 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+            
+            
+                        </div>
+                    </div>
+                  </li>
+                  
+                  <li  class="pt_80">
+                    <div class="content">
+                        <div class="phase_content pb-4 d-lg-none">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 4 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q3 (2024)</span>
+                                </h2>
+                        </div>
+                        <div class="text_grop d-flex align-items-center justify-content-center">
+                            <div class="text_outfit">
+                                <h2 class="max-w-316 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0 ">Beyond theStars</h2>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex gap-3 pt-3 pb-1">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-170 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0 ">Form partnerships.</h2>
+                                    </div>
+            
+                                    <div class="d-flex gap-3 pt-3 ">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-216 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Drive further innovation.</h2>
+            
+                                    </div> 
+                                    <div class="d-flex gap-3 pt-3 pb-3">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-246 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Host a galactic celebration.</h2>
+            
+                                    </div>
+
+                                    <div class="d-flex gap-3 pt-3 pb-3">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-288 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Secure TROLLMP's enduring legacy.</h2>
+            
+                                    </div>
+                                    <div class="d-flex gap-3 pt-3">
+                                        <img src="./assets/image/SVG/white_tic.svg" alt="white_tic.svg">
+                                        <h2 class="max-w-244 ff_Balsamiq fw-400 fs-lg lh-24 text-p-white mb-0">Enhance platform features.</h2>
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="time2">
+                        <div class="phase_content">
+                            <h2 class="max-w-191 ff_Gothic fw-400 fs-xxl lh-37 text-p-white mb-0"> Phase 5 <span class="fw-400 ff_Gothic fs-xl lh-31 text-p-white">Q1 - Q2 (2024)</span>
+                                </h2>
+            
+            
+                        </div>
+                    </div>
+                  </li>
+                  
+
+
+             
+                  <div style="clear:both;"></div>
+                </ul>
+              </div>
+        </div>
+
+    </section> 
+
+    <!------------------------------------------------------------------------ section_6 ----------------------------------------------------->
+    <section class="" id="Roadmap">
+        <div class="container max-w-1140 pb-139 mx-auto">
+            <div class="row ">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="max-w-270 ff_Gothic fw-400 fs-3xl lh-48 drk-black mb-0 pb-16  pt-121 text-center">Ecosystem</h2>
+                    <p class="max-w-728 ff_Balsamiq fw-400 fs-sm lh-24 text-center mb-0 drk-black op-70 pb-70">In the
+                        TROLLMP
+                        ecosystem, everyone's a winner! From our dedicated meme creators to our passionate community
+                        members, we're building a platform where everyone can come together to laugh, meme, and vote.
+                        And let me tell you, folks,it's going to be tremendous!</p>
+
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end pb-4"data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="box_7  w-100">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between ">
+                            <img src="./assets/image/SVG/trmp_manitm.svg" alt="trmp_man_itm1.png"
+                                class="w-100 max-w-170">
+
+                            <div class=" d-flex flex-column">
+                                <h2 class="max-w-271 ff_Balsamiq fw-700 fs-lg lh-24 drk-black mb-0 pb-8">Partnerships
+                                    and Integrations</h2>
+                                <p class="max-w-369 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0">TROLLMP will
+                                    actively pursue partnerships and integrations with other projects and platforms in
+                                    the meme coin space, expanding its reach andutility within the broader crypto
+                                    community.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-lg-6 d-flex justify-content-center  justify-content-lg-end justify-content-xl-start pb-4"data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="box_7 padding_30  w-100">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+                            <img src="./assets/image/SVG/trmp_manitm2.svg" alt="trmp_man_itm1.png"
+                                class="w-100 max-w-88">
+
+                            <div class="">
+                                <h2 class="max-w-271 ff_Balsamiq fw-700 fs-lg lh-24 drk-black mb-0 pb-8">Community
+                                    Development</h2>
+                                <p class="max-w-369 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0">Resources will
+                                    be allocated towards community development initiatives, including educational
+                                    programs, hackathons, and
+                                    developer grants, to foster innovation and engagement within the TROLLMP community
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end  pb-4"data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="box_7 padding_20  w-100">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                            <img src="./assets/image/SVG/trmp_manitm3.svg" alt="trmp_man_itm1.png"
+                                class="w-100 max-w-145">
+
+                            <div class="">
+                                <h2 class="max-w-271 ff_Balsamiq fw-700 fs-lg lh-24 drk-black mb-0 pb-8">Continuous
+                                    Improvement</h2>
+                                <p class="max-w-369 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0">The TROLLMP
+                                    team is committed to continuous improvement and will allocate resources towards
+                                    research, development, and
+                                    optimization of the TROLLMP platform to ensure its long-term success and
+                                    sustainability</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end justify-content-xl-start pb-lg-4" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="box_7 padding_30  w-100">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                            <img src="./assets/image/SVG/trmp_manitm4.svg" alt="trmp_man_itm1.png"
+                                class="w-100 max-w-133">
+
+                            <div class="">
+                                <h2 class="max-w-271 ff_Balsamiq fw-700 fs-lg lh-24 drk-black mb-0 pb-8">Expansion into
+                                    New Markets</h2>
+                                <p class="max-w-369 op-70 ff_Balsamiq fw-400 fs-sm lh-24 drk-black mb-0">Funds will be
+                                    invested in expanding the presence of TROLLMP in new markets and demographics,
+                                    driving adoption and
+                                    awareness of the token among meme enthusiasts worldwide.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt_subtract " id="Ecosystem">
+
+        <div class="d-flex">
+            <img src="./assets/image/conclusetoppic.png" alt="conclusetoppic" class=" w-100">
+        </div>
+        <div class="drk-red pt-4 0 pb-4 0 mt_subtract position-relative">
+            <div class="position-absolute z-0  elpse_frst d-none d-lg-block">
+                <img src="./assets/image/SVG/elpse_frst.svg " alt="elpse_frst.svg" class="w-100 op-90">
+
+            </div>
+
+            <div class="position-absolute z-0  mini_buble_elpsescnd d-none d-lg-block">
+                <img src="./assets/image/SVG/mini_buble_elpsescnd.svg" alt="elpse_frst.svg" class="w-100 op-90">
+
+            </div>
+            <div class="position-absolute z-0  right_buble_elpsethrd d-none d-lg-block">
+                <img src="./assets/image/SVG/right_buble_elpsethrd.svg" alt="elpse_frst.svg" class="w-100 op-90">
+
+            </div>
+            <div class="container max-w-1440 ">
+                <div class="max-w-783 mx-auto d-flex flex-column justify-content-center align-items-center ">
+                 <h2 class="max-w-264 fw-400 fs-3xl lh-48 text-p-white mb-0 text-center ff_Gothic pb-16">Conclusion</h2>
+                    <p class="max-w-783 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 text-center op-70">In conclusion,
+                        TROLLMP
+                        is more than just a token. It's a movement, a revolution, a testament to the power of memes. So
+                        join
+                        us, fellow meme enthusiasts, as we embark on this incredible journey together. Together, we'll
+                        make
+                        memes great again!
+                        </p>
+                        <p class="max-w-783 ff_Balsamiq fw-400 fs-sm lh-24 text-p-white mb-0 text-center op-70">Remember, nobody memes like we do. Nobody launches tokens like we do. Because at TROLLMP, we're
+                            not
+                            just making memes, we're making history!</p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="d-flex bg_blue">
+            <img src="./assets/image/conslvebotmpic.png" alt="conclusetoppic" class=" w-100">
+        </div>
+    </section>
+    <!----------------------------------------------------------------- footer -------------------------------------------------------->
+    <footer class="bg_blue mt_subtract" id="Conclusion">
+        <div class="container max-w-1440 pt-120">
+            <div class="max-w-659 mx-auto d-flex justify-content-center align-items-center">
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/image/SVG/footer_logo.svg" alt="footer_logo.svg" class="w-100 max-w-114 pb-16">
+                    <p class="max-w-659 op-70 fw-400 fs-sm lh-24 text-center text-p-white mb-0">In this tremendous
+                        whitepaper, we're introducing TROLLMP, the most fantastic token ever created! Just like nobody
+                        builds walls better than me, no body launches tokens like we do! </p>
+
+                    <div class="pt-34 d-flex gap-3 pb-4">
+                        <div class="mini-box_7 d-flex align-items-center justify-content-center" data-aos="zoom-in-up">
+                            <a href="https://x.com/?lang=en" target="_blank" class="hover-element"><svg width="19"
+                                    height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5332 0.767578H17.2272L11.3413 8.21082L18.266 18.3374H12.8443L8.59824 12.1949L3.73873 18.3374H1.04323L7.33907 10.3758L0.696228 0.768388H6.2556L10.0939 6.38282L14.5332 0.767578ZM13.5881 16.5539H15.0808L5.44446 2.4579H3.84268L13.5881 16.5539Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+
+                        </div>
+                        <div class="mini-box_7 d-flex align-items-center justify-content-center" data-aos="zoom-in-up">
+                            <a href="https://discord.com/" target="_blank" class="hover-element"><svg width="26"
+                                    height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5098 1.86903C19.9265 1.13094 18.2122 0.595223 16.4265 0.285699C16.4108 0.285199 16.3952 0.288137 16.3808 0.294307C16.3664 0.300478 16.3536 0.309731 16.3431 0.321414C16.1288 0.714271 15.8788 1.22618 15.7122 1.61903C13.8181 1.33332 11.8919 1.33332 9.99788 1.61903C9.83121 1.21427 9.58121 0.714271 9.35502 0.321414C9.34312 0.297604 9.3074 0.285699 9.27169 0.285699C7.48597 0.595223 5.78359 1.13094 4.18836 1.86903C4.17645 1.86903 4.16455 1.88094 4.15264 1.89284C0.914547 6.73808 0.0216893 11.4524 0.462166 16.119C0.462166 16.1428 0.47407 16.1667 0.49788 16.1786C2.64074 17.75 4.70026 18.7024 6.73598 19.3333C6.77169 19.3452 6.8074 19.3333 6.81931 19.3095C7.2955 18.6547 7.72407 17.9643 8.09312 17.2381C8.11693 17.1905 8.09312 17.1428 8.0455 17.1309C7.36693 16.869 6.72407 16.5595 6.09312 16.2024C6.0455 16.1786 6.0455 16.1071 6.08121 16.0714C6.21217 15.9762 6.34312 15.869 6.47407 15.7738C6.49788 15.75 6.53359 15.75 6.5574 15.7619C10.6526 17.6309 15.0693 17.6309 19.1169 15.7619C19.1407 15.75 19.1765 15.75 19.2003 15.7738C19.3312 15.8809 19.4622 15.9762 19.5931 16.0833C19.6407 16.119 19.6407 16.1905 19.5812 16.2143C18.9622 16.5833 18.3074 16.8809 17.6288 17.1428C17.5812 17.1547 17.5693 17.2143 17.5812 17.25C17.9622 17.9762 18.3907 18.6667 18.855 19.3214C18.8907 19.3333 18.9265 19.3452 18.9622 19.3333C21.0098 18.7024 23.0693 17.75 25.2122 16.1786C25.236 16.1667 25.2479 16.1428 25.2479 16.119C25.7717 10.7262 24.3788 6.0476 21.5574 1.89284C21.5455 1.88094 21.5336 1.86903 21.5098 1.86903ZM8.71217 13.2738C7.48598 13.2738 6.46217 12.1428 6.46217 10.75C6.46217 9.35713 7.46217 8.22618 8.71217 8.22618C9.97407 8.22618 10.9741 9.36903 10.9622 10.75C10.9622 12.1428 9.96217 13.2738 8.71217 13.2738ZM17.0098 13.2738C15.7836 13.2738 14.7598 12.1428 14.7598 10.75C14.7598 9.35713 15.7598 8.22618 17.0098 8.22618C18.2717 8.22618 19.2717 9.36903 19.2598 10.75C19.2598 12.1428 18.2717 13.2738 17.0098 13.2738Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="mini-box_7 d-flex align-items-center justify-content-center" data-aos="zoom-in-up">
+                            <a href="https://telegram.org/" target="_blank" class="hover-element"><svg width="25"
+                                    height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.5025 19.5581V19.5557L20.5239 19.5045L24.094 1.50545V1.44831C24.094 0.999521 23.9273 0.607874 23.5678 0.373362C23.2523 0.16742 22.8893 0.153135 22.6345 0.172182C22.3974 0.193628 22.1634 0.241543 21.9369 0.315032C21.8404 0.346167 21.7451 0.381113 21.6512 0.419788L21.6358 0.42574L1.732 8.23368L1.72604 8.23606C1.66553 8.25673 1.6063 8.28098 1.54867 8.30868C1.40712 8.37228 1.2713 8.44795 1.14274 8.53486C0.8868 8.71104 0.39992 9.12531 0.482058 9.78242C0.549912 10.3276 0.924893 10.6728 1.17845 10.8526C1.32812 10.9575 1.48903 11.0453 1.65819 11.1145L1.69628 11.1312L1.70819 11.1347L1.71652 11.1383L5.19968 12.3109C5.18778 12.5287 5.2092 12.7513 5.26753 12.9715L7.01149 19.5891C7.10677 19.9498 7.31263 20.2716 7.60018 20.5093C7.88773 20.747 8.24252 20.8887 8.61472 20.9145C8.98692 20.9402 9.35783 20.8487 9.67537 20.6528C9.9929 20.457 10.2411 20.1666 10.3851 19.8224L13.1088 16.9106L17.786 20.4962L17.8526 20.5247C18.2776 20.7104 18.674 20.7688 19.0371 20.72C19.4002 20.67 19.6882 20.5176 19.9049 20.345C20.1555 20.1418 20.3552 19.883 20.4882 19.5891L20.4977 19.5688L20.5013 19.5617L20.5025 19.5581ZM6.99364 12.5168C6.97433 12.4434 6.97892 12.3657 7.00674 12.2951C7.03457 12.2244 7.08419 12.1645 7.14839 12.124L18.9585 4.62434C18.9585 4.62434 19.6537 4.20174 19.6287 4.62434C19.6287 4.62434 19.7525 4.69815 19.3799 5.04456C19.0276 5.3743 10.9625 13.1608 10.1459 13.9489C10.1005 13.993 10.0686 14.0491 10.0542 14.1108L8.7376 19.1343L6.99364 12.5168Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="last_line mt-44"></div>
+        <div class=" d-flex flex-column justify-content-center align-items-center">
+            <p class="py-20 text-p-white max-w-246 op-70 ff_Balsamiq fw-400 fs-sm lh-24 mb-0 text-center">copyright@2024
+                all right reserved</p>
+        </div>
+
+    </footer>
+    <section class="scroll_top position-fixed shadow cursor cp">
+        <div class="scroll_box">
+            <img src="./assets/image/SVG/top_up.svg" alt="scroll to top icon" class="w-100 h-100 ">
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    <script src="./assets/js/app.js"></script>
+   
+</body>
+
+</html>
